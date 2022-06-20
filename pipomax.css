@@ -1,0 +1,47 @@
+@font-face {
+    font-family: "red";
+    src: url("KGRedHands.ttf");
+}
+
+@font-face {
+    font-family: "lemon";
+    src: url("LEMONMILK-Bold.otf");
+}
+
+@font-face {
+    font-family: "medium";
+    src: url("LEMONMILK-MediumItalic.otf");
+}
+
+
+p {
+    font-family: "red";
+    font-size: 30px;
+    text-align: center;
+}
+
+
+img {
+    width: 200px;
+    align-items: center;
+}
+
+a {
+    font-family: "lemon";
+    font-size: 100%;
+    background-color: rgb(17, 36, 135);
+    color: white;
+    text-shadow: black;
+    text-align: center;
+    cursor: pointer;
+    
+}
+
+.recibo {
+    align-items: center;
+}
+
+
+
+
+

@@ -1,0 +1,243 @@
+@font-face {
+    font-family: "love";
+    src: url("cr-fontes/Daylove_DEMO.ttf");
+}
+
+@font-face {
+    font-family: "lemon";
+    src: url("cr-fontes/LEMONMILK-Light.otf");
+}
+
+@font-face {
+    font-family: "book";
+    src: url("cr-fontes/Garet-Book.ttf");
+}
+
+header{
+    padding: 28px;
+    background-color: #ffffff;
+    font-family: 'Oswald', sans-serif;
+    letter-spacing: 1px;
+    width: 100%;
+    height: 50px;
+    position: fixed;
+    display: flex;
+}
+
+.menu-h ul {
+    list-style-type: none;
+    transform: translate(-1%, -25%);
+}
+
+.menu-h ul li {
+    display: inline-block;
+    font-size: 18px;
+    justify-items: center;
+    padding-right: 15px;
+
+}
+
+.menu-h ul li a {
+    color: black;
+    padding: 20px;
+    text-decoration: none;
+
+}
+
+.menu-h ul li a:hover {
+    background-color: rgb(2, 16, 85);
+    color: white;
+    transition: all 0.5s;
+
+}
+
+body {
+    background-color: rgb(0, 0, 0);
+    color: rgb(255, 255, 255);
+    text-align: center;
+    font-family: 'Anton', sans-serif;
+    font-size: 16px;
+    overflow-x: hidden;
+}
+
+p {
+    letter-spacing: 1px;
+    margin-left: 30px;
+    margin-right: 30px;
+    font-size: 20px;
+    font-weight: 500px;
+    box-sizing: inherit;
+    margin-top: 0;
+    padding-top: 0;
+    text-align: justify;
+    
+}
+
+h1 {
+    font-family: "love";
+    text-align: center;
+    font-size: 70px;
+    padding-top: 0px;
+    padding-bottom: 0px;
+    color: rgb(17, 36, 135);
+    text-shadow: #ffffff 2px 2px 1px;
+}
+
+#cx-antigos {
+    display: flex;
+    align-items: center;
+}
+
+.img-antigos {
+    margin-left: 90px;
+    width: 210px;
+    height: 320px;
+    display: flex;
+    border: solid 4px rgb(255, 255, 255);
+}
+
+.p-antigos {
+    text-align: justify;
+    padding-left: 20px;
+}
+
+.paragrafo {
+    text-align: justify;
+}
+
+.lista {
+    text-align: justify;
+    margin-left: 50px;
+    margin-right: 100px;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 20px;
+
+}
+
+h2 {
+    letter-spacing: 1px;
+    color: #ffffff;
+    text-shadow:#313131 2px 2px 5px;
+    font-family: "lemon";
+    clear: both;
+    font-size: 30px;
+    font-weight: 800;
+    background-color: rgb(3, 10, 46);
+    padding-left: 100px;
+    padding-right: 100px;
+    padding-bottom: 5px;
+    padding-top: 5px;
+}
+
+.h3 {
+    font-family: "book";
+    font-size: 25px;
+    text-align: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: absolute;
+    padding-bottom: 200px;
+    padding-left: 30%;
+}
+
+.cx-protagonista {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 10px;
+    color: black;
+    background-color: white;
+    padding-top: 30px;
+    padding-bottom: 30px;
+    margin-left: 20px;
+    margin-right: 20px;
+}
+
+.img-protagonista {
+    width: 380px;
+    height: 250px;
+    margin-left: 80px;
+    display: flex;
+}
+
+.p-protagonista {
+    display: inline-block;
+    text-align: justify;
+}
+
+div {
+    justify-content: center;
+    margin-left: 10px;
+    margin-right: 30px;
+}
+
+.img-netflix {
+    width: 240px;
+    height: 370px;
+    border-radius: 10px;
+    margin-left: 15px;
+    margin-bottom: 50px;
+}
+
+.img-netflix:hover {
+    opacity: 50%;
+}
+
+#cx-classicos {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 10px;
+    background-color: white;
+    color: black;
+    padding-top: 30px;
+    padding-bottom: 30px;
+    margin-left: 20px;
+    margin-right: 20px;
+}
+
+.img-classicos {
+    width: 400px;
+    height: 300px;
+    margin-left: 80px;
+}
+
+.p-classicos {
+    text-align: justify;
+}
+
+footer {
+    background: rgb(9, 22, 85);
+    background: radial-gradient(circle, rgb(255, 255, 255) 47%, rgba(0, 0, 0, 1) 100%);
+    color: black;
+    height: 100px;
+    text-align: center;
+    padding: 70px;
+    position: relative;
+    font-family: 'Courier New', Courier, monospace;
+}
+
+footer p {
+    font-size: 15px;
+    text-align: center;
+}
+
+.brand img {
+    width: 45px;
+    height: 45px;
+    padding-left: 5px;
+    padding-right: 5px;
+
+}
+
+.box img {
+    padding: 15px;
+}
+
+figcaption {
+    font-family: Ghastly Panic;
+    font-style: italic;
+    font-size: 18px;
+    font-weight: bold;
+}

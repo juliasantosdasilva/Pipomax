@@ -1,0 +1,508 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> CINE PIPOMAX </title>
+    <link rel="shortcut icon" href="pag-img/logocinema.png">
+
+    <style>
+        @font-face {
+            font-family: "medium";
+            src: url("pag-fontes/LEMONMILK-MediumItalic.otf");
+        }
+
+        @font-face {
+            font-family: "lemon";
+            src: url("pag-fontes/LEMONMILK-Bold.otf");
+        }
+
+
+        @font-face {
+            font-family: "condensed";
+            src: url("pag-fontes/typewcond_bold.otf");
+        }
+
+        @font-face {
+            font-family: "hollow";
+            src: url("pag-fontes/StageHollow.ttf");
+        }
+
+        @font-face {
+            font-family: "stage";
+            src: url("pag-fontes/Stage.ttf");
+        }
+
+        @font-face {
+            font-family: "xilosa";
+            src: url("pag-fontes/xisola_.ttf");
+        }
+
+        @font-face {
+            font-family: "mac";
+            src: url("pag-fontes/Mabook.otf");
+        }
+
+
+        h1 {
+            margin-left: 25px;
+            margin-right: 25px;
+            font-family: "hollow";
+            text-shadow: 8px 5px 3px black;
+            text-align: center;
+            font-size: 100px;
+            color: white;
+            margin-top: 70px;
+            height: 120px;
+            margin-bottom: 0;
+    
+        }
+
+        h4 {
+             text-align: center;
+             font-family: "medium";
+             font-size: 20px;
+             margin-top: 0;
+             color:#ffffff;
+        }
+
+        h2 {
+    letter-spacing: 1px;
+    color: #ffffff;
+    text-shadow:#000000 2px 2px 5px;
+    font-family: "lemon";
+    clear: both;
+    font-size: 25px;
+    background-color: rgb(3, 10, 46);
+    padding-bottom: 10px;
+    padding-top: 10px;
+    
+}
+
+        h3 {
+            letter-spacing: 1px;
+    color: #ffffff;
+    text-shadow:#000000 2px 2px 5px;
+    font-family: "lemon";
+    clear: both;
+    font-size: 25px;
+    background-color: rgb(3, 10, 46);
+    padding-bottom: 10px;
+    padding-top: 10px;
+    margin-top: 0;
+
+        }
+
+        body {
+            background-color: rgb(0, 0, 0);
+            margin-top: -60px;
+            text-align: center;
+            justify-items: center;
+            position: static;
+        }
+
+
+        figure{
+            display: inline-block;
+           padding-left: -20px;
+        }
+
+        .fotos {
+            width: 240px;
+            height: 370px;
+            border-radius: 10px;
+            margin-left: 15px;
+            margin-bottom: 50px;
+        }
+
+
+        .fotos:hover {
+            opacity: 50%;
+        }
+
+      
+        form legend{
+            font-family: "medium";
+            font-size: 30px;
+            text-shadow: #000000 3px 3px 3px;
+            text-align: center;
+        }
+
+        form {
+            padding:15px;
+            display: inline-block;
+            width: 600px;
+            font-weight: bold;
+            font-family: "lemon";
+            font-size: 20px;
+            line-height: 1.5;
+            color: white;
+            text-align: center;
+            align-items: center;
+            justify-content: center;
+            background-color: rgb(2, 16, 85);
+            padding-bottom: 8px;
+            border-radius: 5%;
+            border: 3px solid rgb(252, 252, 255);
+            text-shadow: #000000 3px 3px 3px;
+        }
+
+select {
+            text-align: center;
+            align-items: center;
+            justify-content: center;
+            height: 30px;
+            width: 390px;
+            font-family: 'Anton', sans-serif;
+            font-size: 18px;
+            line-height: 1.5;
+            color: rgb(0, 7, 39);
+            background-color: 	#f7f7f7;
+            font-size: 80%;
+            cursor: pointer; 
+}
+
+#botao {
+            font-family: "medium";
+            font-size: 100%;
+            background-color: rgb(4, 10, 37);
+            color: white;
+            text-align: center;
+            cursor: pointer;
+            width: 30%;
+        }
+
+#botao:hover {
+            opacity: 80%;
+            width: 22%;
+            cursor: pointer;
+            width: 30%;
+            background-color:rgb(17, 44, 180); 
+        }
+
+#data {
+    text-align: center;
+    height: 30px;
+     width: 390px;
+    font-family: 'Anton', sans-serif;
+    font-size: 16px;
+    line-height: 1.5;
+    color: rgb(3, 10, 44);
+    background-color: #f7f7f7;
+    font-size: 80%;
+    cursor: pointer;
+        }
+
+option {
+    background-color: rgb(1, 24, 141);
+    color: white;
+
+}
+
+
+header{
+    padding: 28px;
+    background-color: #ffffff;
+    font-family: 'Oswald', sans-serif;
+    letter-spacing: 1px;
+    width: 100%;
+    height: 50px;
+    position: fixed;
+}
+
+.menu-h ul {
+    list-style-type: none;
+    transform: translate(-1%, -25%);
+}
+
+.menu-h ul li {
+    display: inline-block;
+    font-size: 18px;
+    justify-items: center;
+    padding-right: 15px;
+
+}
+
+.menu-h ul li a {
+    color: black;
+    padding: 20px;
+    text-decoration: none;
+
+}
+
+.menu-h ul li a:hover {
+    background-color: rgb(2, 16, 85);
+    color: white;
+    transition: all 0.5s;
+
+}
+
+    </style>
+
+</head>
+
+<body>
+<br>
+<br>
+<br>
+<br>
+
+    <header>
+        <nav class="menu-h">
+        <ul>
+            <li><a href="pipomax.html"><b>HOME</b></a></li>
+            <li><a href="acao.html"><b>AÇÃO E AVENTURA</b></a></li> 
+            <li><a href="drama.html"><b>DRAMA</b></a></li> 
+            <li><a href="cr.html"><b>COMÉDIA ROMÂNTICA</b></a></li> 
+            <li><a href="fc.html"><b>FICÇÃO CIENTÍFICA</b></a></li> 
+            <li><a href="terror.html"><b>TERROR</b></a></li>  
+       </ul>    
+        </nav> 
+    </header> 
+    <br>
+    <br>
+    <br>
+
+    <h1> PIPOMAX</h1>
+
+    <h4> SEU SITE CINEMATOGRÁFICO FAVORITO!</h4>
+   
+    <h2> FILMES EM CARTAZ | 2022 </h2>
+
+    <a href="https://www.youtube.com/watch?v=X23XCFgdh2M">
+        <img class="fotos" src="pag-img/doutorestranho.jpg">
+    </a>
+
+    <a href="https://www.youtube.com/watch?v=IrJeYZgzIqw">
+        <img class="fotos" src="pag-img/sonic.jpg">
+    </a>
+
+    <a href="https://www.youtube.com/watch?v=9SWnR2L6n0U">
+        <img class="fotos" src="pag-img/norte.png">
+    </a>
+
+    <a href="https://www.youtube.com/watch?v=8AMYdkIn2c8">
+        <img class="fotos" src="pag-img/animais.jpg">
+    </a>
+
+    <a href="https://www.youtube.com/watch?v=4EFgsHrko_Q">
+        <img class="fotos" src="pag-img/talento.png">
+    </a>
+
+    <a href="https://www.youtube.com/watch?v=qJSeGeLHagc">
+        <img class="fotos" src="pag-img/chamas.jpg">
+    </a>
+
+    <a href="https://www.youtube.com/watch?v=mPGS0aKhXV4">
+        <img class="fotos" src="pag-img/dog.jpg">
+    </a>
+
+    <a href="https://www.youtube.com/watch?v=VT_eIlyrE1k">
+        <img class="fotos" src="pag-img/medium.jpg">
+    </a>
+
+    <a href="https://www.youtube.com/watch?v=IYo4KcjUo6s">
+        <img class="fotos" src="pag-img/amigas.jpg">
+    </a>
+
+    <a href="https://www.youtube.com/watch?v=vW5kcXYYQRw">
+        <img class="fotos" src="pag-img/cidade.png">
+    </a>
+
+    <a href="https://www.youtube.com/watch?v=3U49voMu3As">
+        <img class="fotos" src="pag-img/klondike.png">
+    </a>
+
+    <a href="https://www.youtube.com/watch?v=RoPooRVqgYw">
+        <img class="fotos" src="pag-img/aguas.jpg">
+    </a>
+
+    <a href="https://www.youtube.com/watch?v=eMWMVTkdeLc">
+        <img class="fotos" src="pag-img/pureza.png">
+    </a>
+
+    <a href="https://www.youtube.com/watch?v=7ybD7Khg9BA">
+        <img class="fotos" src="pag-img/crocodilos.jpg">
+    </a>
+
+    <a href="https://www.youtube.com/watch?v=guj_Up3zLVQ">
+        <img class="fotos" src="pag-img/miss.jpg">
+    </a>
+
+    <a href="https://www.youtube.com/watch?v=E6vp_yQRg6Q">
+        <img class="fotos" src="pag-img/assassino.jpg">
+    </a>
+
+    <a href="https://www.youtube.com/watch?v=7aOCYTflp8o">
+        <img class="fotos" src="pag-img/topgun.jpg">
+    </a>
+
+    <a href="https://www.youtube.com/watch?v=zC8Vc8rMOdk">
+        <img class="fotos" src="pag-img/jurassic.jpg">
+    </a>
+
+    <a href="https://www.youtube.com/watch?v=DcHYpu8Wfl0">
+        <img class="fotos" src="pag-img/lightyear.jpg">
+    </a>
+
+    <a href="https://www.youtube.com/watch?v=f0uND6Lx5ZE">
+        <img class="fotos" src="pag-img/medidaprovisoria.jpg">
+    </a>
+
+    <br>
+    <br>
+
+    <h3>COMPRE AQUI SEU INGRESSO</h3>
+    
+    <br>
+
+    <form method="get" action="cinema.php">
+        <br>
+        <center>
+        <img src="pag-img/tickets.png" width="170px" height="170px">
+        </center>
+        <legend>INGRESSOS</legend>
+        <br>
+        <label for="itexto"> Filme:</label>
+        <br>
+        <select name="filme" id="filme">
+
+            <option value="1" name="filme">Doutor Estranho no Multiverso da Loucura</option>
+            <option value="2" name="filme">Sonic 2</option>
+            <option value="3" name="filme">O Homem do Norte</option>
+            <option value="4" name="filme">Animais Fantásticos: Os Segredos de Dumbledore</option>
+            <option value="5" name="filme">O Peso do Talento</option>
+            <option value="6" name="filme">Chamas da Vingança</option>
+            <option value="7" name="filme">Dog - A Aventura de uma Vida</option>
+            <option value="8" name="filme">A Medium</option>
+            <option value="9" name="filme">4 Amigas Numa Fria</option>
+            <option value="10" name="filme">Cidade Perdida</option>
+            <option value="11" name="filme">Klondike</option>
+            <option value="12" name="filme">Águas Selvagens</option>
+            <option value="13" name="filme">Pureza</option>
+            <option value="14" name="filme">Crocodilos - A Morte Te Espera</option>
+            <option value="15" name="filme">Miss França</option>
+            <option value="16" name="filme">Assassino Sem Rastro</option>
+            <option value="17" name="filme">Top Gun: Maverick</option>
+            <option value="18" name="filme">Jurassic World: Domínio</option>
+            <option value="19" name="filme">Lightyear</option>
+            <option value="20" name="filme">Medidia Provisória</option>
+        </select>
+
+        <br>
+
+        <form method="get" action="cinema.php">
+            <label for="itexto"> <br>Comida:</label>
+            <br>
+            <select name="comida" id="comida">
+
+                <option value="1" name="comida">Nenhum</option>
+                <option value="2" name="comida">Pipoca</option>
+                <option value="3" name="comida">Refrigerante</option>
+                <option value="4" name="comida">Balas</option>
+                <option value="5" name="comida">Pipoca + Refrigerante</option>
+                <option value="6" name="comida">Combo: 2 Refrigerantes + 1 Pipoca + Bibs</option>
+                <option value="7" name="comida">2 Pipocas + 1 Refrigerante</option>
+            </select>
+
+            <br>
+
+            <form method="get">
+                <label for="itexto"><br>Local:</label>
+                <br>
+                <select>
+
+                    <option>Shopping Total</option>
+                    <option>Iguatemi</option>
+                    <option>Bourbon Shopping Wallig</option>
+                    <option>Praia de Belas Shopping</option>
+                    <option>Bourbon Shopping Country</option>
+                    <option>Moinhos Shopping</option>
+                    <option>Bourbon Shopping Ipiranga</option>
+
+                </select>
+
+                <br>
+
+                <form method="get">
+                    <label for="itexto"> <br>Forma de Pagamento:</label>
+                    <br>
+                    <select>
+
+                        <option>Cartão de Débito</option>
+                        <option>Cartão de Crédito</option>
+                        <option>Pix</option>
+
+                    </select>
+
+                    <br>
+
+
+
+                    <label for="data"><br>Data:</label>
+                    <br>
+                    <input type="date" id="data">
+
+                    <br>
+
+                    <form method="get">
+                        <label for="itexto"> <br>Horário:</label>
+                        <br>
+                        <select name="horario">
+
+                            <option>13:00</option>
+                            <option>13:45</option>
+                            <option>14:30</option>
+                            <option>15:10</option>
+                            <option>15:25</option>
+                            <option>16:00</option>
+                            <option>16:50</option>
+                            <option>17:15</option>
+                            <option>17:40</option>
+                            <option>18:35</option>
+                            <option>18:55</option>
+                            <option>19:20</option>
+                            <option>19:40</option>
+                            <option>20:00</option>
+                            <option>20:35</option>
+                            <option>20:55</option>
+                            <option>21:30</option>
+                            <option>22:10</option>
+                        </select>
+
+                        <br>
+
+                        <form method="get">
+                            <label for="itexto"> <br>Dimensão:</label>
+                            <br>
+                            <select>
+                                <option>2D</option>
+                                <option>3D</option>
+                            </select>
+
+                            <br>
+                            <br>
+
+                            <input type="submit" value="Comprar" id="botao">
+                             
+                            <br>
+                            <br>
+                            <br>
+                        </form>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+
+
+
+</body>
+
+</html>
